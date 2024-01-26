@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <section class="image">
+            <div class="brand"><img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin logo">CityPulse</div>
+        </section>
+        <section class="form">
+            <div class="text">
+                <strong>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.
+                </strong>
+                <p><strong><br><br>Let's do this!</strong></p>
+            </div>
+            <form>
+                <div class="row-1">
+                    <div class="first-name" style="display: inline-block;">
+                        <div><label for="first-name">  FIRST NAME <span style="color:red;">*</span></label></div>
+                        <input type="text" required id="first-name" name="first-name">
+                    </div>
+                    <div class="last-name" style="display: inline-block;">
+                        <div><label for="last-name">LAST NAME</label></div>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="email" style="display: inline-block;">
+                        <div><label for="email">EMAIL<span style="color:red;">*</span></label></div>
+                        <input type="email" id="email" name="email" required >
+                    </div>
+                    <div class="mobile-number" style="display: inline-block;">
+                        <div><label for="mobile-number">PHONE NUMBER<span style="color:red;">*</span></label></div>
+                        <input type="number" minlength="10" maxlength="10" required id="mobile-number">
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="password" style="display: inline-block;">
+                        <div><label for="password">PASSWORD<span style="color:red;">*</span></label></div>
+                        <input type="password" name="password" id="password" required minlength="8">
+                    </div>
+                    <div class="repeat-password" style="display: inline-block;">
+                        <div><label for="repeat-password">CONFIRM PASSWORD<span style="color:red;">*</span></label></div>
+                        <input type="password" name="repeat-password" id="repeat-password" required minlength="8">
+                        <div class="check hide">Passwords don't match *</div>
+                    </div>
+                </div>
+                <br>
+                <button type="submit" id="button">Create Account</button>
+            </form>
+            <div style="padding:5px;">
+                Already have an account? <a href="#">Log in</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

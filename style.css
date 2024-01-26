@@ -1,0 +1,116 @@
+@font-face {
+    font-family: odin;
+    src: url("Norse-Bold.otf");
+}
+
+body{
+    margin:0;
+    background-color: whitesmoke;
+}
+
+.content{
+    display: flex;
+    gap:20px;
+}
+
+.image{
+    width: 100%;
+    max-width: 900px;
+    height: 932px;
+    background-image: url("mos-design-EmWoOtU3FPA-unsplash.jpg");
+    background-size:cover;
+}
+
+.brand{
+    font-family: odin;
+    font-size: 54px;
+    color:white;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top:200px;
+    padding: 15px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand img{
+    width: 50px;
+}
+
+
+.form{
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top:200px;
+    height: fit-content;
+}
+
+form{
+    font-size: 14px;
+}
+
+.row-1,.row-2,.row-3{
+    display: flex;
+    justify-content: baseline;
+    gap:50px;
+    margin-bottom: 20px;
+    color:darkslategray
+}
+
+input{
+    width: 200px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+input:invalid{
+    border: lightcoral solid 1px;
+}
+input:valid{
+    border: lightslategray solid 1px;
+    transition:0.4s;
+}
+input:hover{
+    border:lightskyblue solid 1px;
+    width: 205px;
+    height: 26.5px;
+    transition: 0.5s;
+}
+
+.row-3{
+    border-bottom: solid 1px lightgray ;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 0px rgba(100, 100, 100, 0.2);
+}
+
+button{
+    padding:  5px 25px;
+    border-radius: 10px;
+    border: solid 1px;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(69.5deg, rgb(251, 0, 0) -0.5%, rgb(3, 10, 252) 97.4%);
+    margin-bottom: 10px;
+}
+
+a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: darkblue;
+}
+a:hover{
+    font-weight: bold;
+}
+
+.check{
+    color:red;
+}
+.hide{
+    display: none;
+}
